@@ -1,5 +1,6 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
+"16r-34-Zt6.ibExternalAccessibilityDescription" = "选择模糊样式";
 "16r-34-Zt6.ibShadowedToolTip" = "模糊样式";
 "1Wj-g5-9tD.ibShadowedToolTip" = "模糊强度";
 "3nA-A3-LWj.ibExternalAccessibilityDescription" = "标注正文选择器";
@@ -15,8 +16,11 @@
 "Qps-aD-et2.ibShadowedToolTip" = "描边颜色";
 "Wen-Ut-NGc.ibShadowedToolTip" = "箭头样式";
 "Wlm-nP-HsP.ibShadowedToolTip" = "字体描边宽度";
+"eGs-pZ-1wh.ibShadowedToolTip" = "简化填充色";
 "edS-kv-Ce9.ibShadowedToolTip" = "聚光灯形状";
+"jUo-Ua-TNo.ibShadowedToolTip" = "多边形样式";
 "m54-Gf-x8f.ibShadowedToolTip" = "箭头样式";
 "mwZ-PJ-kzE.ibExternalAccessibilityDescription" = "步骤样式选择器";
+"mwZ-PJ-kzE.ibShadowedToolTip" = "步骤样式";
 "nFd-Q6-ynW.ibShadowedToolTip" = "填充颜色";
 "x7B-lN-sU5.ibShadowedToolTip" = "字体大小";

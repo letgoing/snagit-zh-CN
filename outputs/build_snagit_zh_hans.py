@@ -25,6 +25,20 @@ HELPER_OUT = ROOT / "work" / "SnagitHelper.zh-Hans.lproj"
 
 
 EXACT = {
+    "Freehand Selection": "自由选区",
+    "Polygon Selection": "多边形选区",
+    "Ellipse Selection": "椭圆选区",
+    "Rectangle Selection": "矩形选区",
+    "Freehand Selection\nSelect an area by drawing a freehand area with the cursor on the canvas.": "自由选区\n在画布上拖动光标，勾勒要选择的区域。",
+    "Polygon Selection\nClick on the canvas to set polygon corners. Double-click to set the final corner.": "多边形选区\n单击画布设置顶点，双击结束选择。",
+    "Background Fill:": "背景填充：",
+    "Snap to Object": "吸附到对象",
+    "Snap to object": "吸附到对象",
+    "Snap to an object within the selected area.": "吸附到选区内的对象。",
+    "Hide image": "隐藏图像",
+    "Show image": "显示图像",
+    "Show/hide image": "显示或隐藏图像",
+    "Share to Camtasia Online": "分享到 Camtasia Online",
     "About Snagit": "关于 Snagit",
     "Actions": "操作",
     "Actual Size": "实际大小",
@@ -1474,7 +1488,7 @@ def extract_strings_comment_english(path: Path) -> dict[str, str]:
     out: dict[str, str] = {}
     pending_value: str | None = None
     property_pattern = re.compile(
-        r'(?:title|ibShadowedToolTip|ibExternalAccessibilityDescription)\s*=\s*"((?:\\.|[^"])*)"'
+        r'^\s*/\* Class = "[^"]+"; (?:title|label|placeholderString|ibShadowedToolTip|ibExternalAccessibilityDescription)\s*=\s*"((?:\\.|[^"])*)"'
     )
     key_pattern = re.compile(r'^"((?:\\.|[^"])*)"\s*=')
 
@@ -2000,6 +2014,17 @@ EXACT.update({
 })
 
 
+EXACT.update(json.loads(Path(__file__).with_name("ui_labels_zh_hans.json").read_text(encoding="utf-8")))
+
+
+def interface_items(src: Path, base: Path, source_items: dict[str, str]) -> dict[str, str]:
+    english = extract_strings_comment_english(src)
+    missing = [key for key in source_items if key not in english]
+    if missing:
+        english.update(extract_nib_english(base / src.with_suffix(".nib").name, missing))
+    return {key: value for key in source_items if (value := translate(english.get(key, "")))}
+
+
 def quote(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n") + '"'
 
@@ -2027,7 +2052,17 @@ def generate_common_framework() -> tuple[int, int]:
             out_items[key] = value
 
     write_strings(COMMON_OUT / "SnagitCommon.strings", out_items)
-    return len(out_items), len(source_items)
+    translated, total = len(out_items), len(source_items)
+    for src in sorted(COMMON_SOURCE.parent.glob("*.strings")):
+        if src == COMMON_SOURCE:
+            continue
+        items = load_strings(src)
+        labels = interface_items(src, COMMON_RESOURCES / "Base.lproj", items)
+        if labels:
+            write_strings(COMMON_OUT / src.name, labels)
+        translated += len(labels)
+        total += len(items)
+    return translated, total
 
 
 def generate_helper_app() -> tuple[int, int, int]:
@@ -2053,15 +2088,7 @@ def generate_helper_app() -> tuple[int, int, int]:
                 if value:
                     out_items[key] = value
         else:
-            nib = HELPER_BASE_LOCALE / src.with_suffix(".nib").name
-            english = extract_strings_comment_english(src)
-            nib_english = extract_nib_english(nib, list(source_items))
-            for key, english_value in nib_english.items():
-                english.setdefault(key, english_value)
-            for key, english_value in english.items():
-                value = translate(english_value)
-                if value:
-                    out_items[key] = value
+            out_items = interface_items(src, HELPER_BASE_LOCALE, source_items)
 
         if out_items:
             write_strings(HELPER_OUT / src.name, out_items)
@@ -2098,12 +2125,7 @@ def main() -> None:
             if src.name == "Localizable.strings":
                 out_items.update(EXTRA_LOCALIZABLE)
         else:
-            nib = BASE_LOCALE / src.with_suffix(".nib").name
-            english = extract_nib_english(nib, list(source_items))
-            for key, english_value in english.items():
-                value = translate(english_value)
-                if value:
-                    out_items[key] = value
+            out_items = interface_items(src, BASE_LOCALE, source_items)
 
         if out_items:
             write_strings(OUT / src.name, out_items)

@@ -2,19 +2,18 @@
 
 用于 macOS 版 Snagit 的非官方简体中文资源包，包含一键安装入口、资源生成器和可直接替换的 `.strings` 文件。
 
-当前随仓库提供的替换文件基于 **Snagit 2026.4.3** 生成。主界面、菜单、工具栏及阴影等设置已在本机确认显示中文。汉化尚未覆盖全部文字，部分功能仍会显示英文。
+当前随仓库提供的替换文件基于 **Snagit 2027.0.1** 生成。汉化覆盖编辑器、效果组件和捕获助手，部分功能仍会显示英文。
 
 ## 一键安装
 
 1. 下载本仓库的 ZIP 并解压，或者使用下方命令克隆。
-2. 结束录屏，完全退出 Snagit 编辑器和菜单栏中的捕获助手。
-3. 双击根目录的 **一键重新汉化.command**，按提示操作。
-4. 安装结束后重新打开 Snagit。
+2. 保存正在编辑的图像，结束录屏。
+3. 双击根目录的 **一键重新汉化.command**。脚本会读取本机 Snagit 的版本，生成并安装中文资源，然后尝试正常退出编辑器和捕获助手，并用简体中文重新打开 Snagit。后续升级 Snagit 后，再双击同一脚本即可。可以在访达中为脚本创建替身放到桌面。
 
 ```bash
 git clone https://github.com/letgoing/snagit-.git
 cd snagit-
-bash outputs/reinstall_snagit_chinese.sh
+./一键重新汉化.command
 ```
 
 自动生成和安装需要 macOS、Python 3 及已经安装的 Snagit。安装器默认使用 `/Applications/Snagit.app`，会重新生成当前版本对应的中文文件、校验格式并安装到三个资源目录。目录不可写时会请求管理员权限。
@@ -27,13 +26,13 @@ SNAGIT_APP="/其他位置/Snagit.app" bash outputs/reinstall_snagit_chinese.sh
 
 ## 已包含的替换文件
 
-`work/` 内的三个目录是真实的中文资源文件，不需要运行生成器就能用于手动替换，共 **103 个 `.strings` 文件**。
+`work/` 内的三个目录包含可手动替换的中文资源。具体文件数会随本机 Snagit 版本变化。
 
-| 仓库内的中文包 | 文件数 | 安装目标，相对于 `Snagit.app/` |
-| --- | ---: | --- |
-| `work/Snagit.zh-Hans.lproj` | 65 | `Contents/Resources/zh-Hans.lproj` |
-| `work/SnagitCommon.zh-Hans.lproj` | 1 | `Contents/Frameworks/SnagitCommon.framework/Versions/A/Resources/zh-Hans.lproj` |
-| `work/SnagitHelper.zh-Hans.lproj` | 37 | `Contents/Library/LoginItems/SnagitHelper.app/Contents/Resources/zh-Hans.lproj` |
+| 仓库内的中文包 | 安装目标，相对于 `Snagit.app/` |
+| --- | --- |
+| `work/Snagit.zh-Hans.lproj` | `Contents/Resources/zh-Hans.lproj` |
+| `work/SnagitCommon.zh-Hans.lproj` | `Contents/Frameworks/SnagitCommon.framework/Versions/A/Resources/zh-Hans.lproj` |
+| `work/SnagitHelper.zh-Hans.lproj` | `Contents/Library/LoginItems/SnagitHelper.app/Contents/Resources/zh-Hans.lproj` |
 
 手动替换前先完全退出 Snagit。将目标目录中已有的 `zh-Hans.lproj` 改名备份，再复制对应的中文包，并将其名称改为 **`zh-Hans.lproj`**。只替换此中文目录，保留 `Base.lproj`、`en.lproj`、`ja.lproj` 等原有资源。
 
@@ -44,6 +43,7 @@ SNAGIT_APP="/其他位置/Snagit.app" bash outputs/reinstall_snagit_chinese.sh
 - `一键重新汉化.command`：可双击的安装入口。
 - `outputs/reinstall_snagit_chinese.sh`：校验、备份及安装三套中文资源。
 - `outputs/build_snagit_zh_hans.py`：根据本机 Snagit 的语言资源和现有词典生成中文包，输出到 `work/`。
+- `outputs/ui_labels_zh_hans.json`：补充的界面原文和译文，须与生成器放在同一目录。
 
 已有中文包会改名为 `zh-Hans.lproj.backup.时间戳`，保留在各自原目录中。需要恢复时，先退出 Snagit，将新中文目录移走，再把对应备份改回 `zh-Hans.lproj`。首次汉化没有旧中文包时不会生成此备份；移走新增的中文目录即可回到应用原有语言。
 

@@ -1,16 +1,26 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
 "240.title" = "不透明度：";
+"264.ibExternalAccessibilityDescription" = "步骤不透明度";
 "264.ibShadowedToolTip" = "不透明度（百分比）";
 "352.title" = "填充";
+"7.ibExternalAccessibilityDescription" = "步骤不透明度";
 "7.ibShadowedToolTip" = "不透明度（百分比）";
+"AoG-kb-Eli.ibExternalAccessibilityDescription" = "步骤填充色";
 "AoG-kb-Eli.ibShadowedToolTip" = "填充颜色";
 "EwV-R9-NQp.ibExternalAccessibilityDescription" = "形状";
 "EwV-R9-NQp.ibShadowedToolTip" = "形状";
 "Gct-Dl-Leb.title" = "形状";
 "Nx9-pZ-DaN.ibShadowedToolTip" = "点击以选择或取消选择阴影方向";
+"Tl1-4C-SIp.ibExternalAccessibilityDescription" = "重新开始步骤编号";
+"Tl1-4C-SIp.ibShadowedToolTip" = "从头开始字母或数字编号";
 "aXZ-UP-VZ4.ibShadowedToolTip" = "高级阴影属性";
+"caa-7O-jf8.title" = "纹理圆形";
+"dWU-L7-Vps.ibExternalAccessibilityDescription" = "步骤文字颜色";
 "dWU-L7-Vps.ibShadowedToolTip" = "文本颜色";
 "di8-rT-Hho.title" = "类型：";
 "oNW-Tl-j16.title" = "文本颜色";
+"qhy-zL-4kq.ibExternalAccessibilityDescription" = "步骤编号类型";
+"qhy-zL-4kq.ibShadowedToolTip" = "编号类型";
+"sNG-DH-9YP.ibShadowedToolTip" = "步骤形状";
 "zxr-pt-ABr.title" = "阴影";

@@ -1,4 +1,22 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
+"06A-oY-5Nm.title" = "吸附到对象";
+"5bP-l6-wws.ibExternalAccessibilityDescription" = "椭圆选区";
+"5bP-l6-wws.ibShadowedToolTip" = "椭圆选区";
 "Azy-kK-aEa.title" = "更多";
+"EYm-Zk-82v.title" = "无法吸附到对象";
+"GLF-YV-FPQ.title" = "背景填充：";
+"GjN-Wq-f3J.title" = "较少";
+"H2A-ax-SuN.ibExternalAccessibilityDescription" = "选取范围";
+"Kgo-nB-6Pg.ibExternalAccessibilityDescription" = "多边形选区";
+"Kgo-nB-6Pg.ibShadowedToolTip" = "多边形选区\n单击画布设置顶点，双击结束选择。";
+"Wri-BO-kvZ.ibShadowedToolTip" = "吸附到选区内的对象。";
+"X84-Tz-FNC.ibExternalAccessibilityDescription" = "矩形选区";
+"X84-Tz-FNC.ibShadowedToolTip" = "矩形选区";
+"Z2s-Rn-8QV.ibExternalAccessibilityDescription" = "吸附到对象";
+"Z2s-Rn-8QV.ibShadowedToolTip" = "吸附到选区内的对象。";
+"sZh-00-IYS.ibExternalAccessibilityDescription" = "自由选区";
+"sZh-00-IYS.ibShadowedToolTip" = "自由选区\n在画布上拖动光标，勾勒要选择的区域。";
 "wWc-Br-lPC.title" = "选择：";
+"xS8-MH-4z1.ibExternalAccessibilityDescription" = "选取范围";
+"yhr-fb-Qkq.title" = "将滑块向“更多”拖动以扩大选区，或选择其他区域。";

@@ -4,9 +4,11 @@
 "104.title" = "容差：";
 "4KB-id-KQL.ibShadowedToolTip" = "填充图像中所有匹配颜色";
 "77.ibExternalAccessibilityDescription" = "填充容差";
+"77.ibShadowedToolTip" = "调高容差可扩大填充范围，调低可缩小范围。按 Command+Z 可撤销并重试。";
 "86.ibExternalAccessibilityDescription" = "填充颜色";
 "86.ibShadowedToolTip" = "填充颜色";
 "91.ibExternalAccessibilityDescription" = "填充容差";
+"91.ibShadowedToolTip" = "调高容差可扩大填充范围，调低可缩小范围。按 Command+Z 可撤销并重试。";
 "9UT-4T-3sZ.title" = "吸管";
 "H8X-18-yWn.title" = "不透明度：";
 "XPi-Od-Zt9.title" = "全局填充";

@@ -1,4 +1,7 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
+"121.label" = "开";
+"122.label" = "关";
 "5.title" = "连接移动设备";
 "558.title" = "方框";
+"quW-hi-63x.title" = "按住 Option 键可连接多台移动设备。";

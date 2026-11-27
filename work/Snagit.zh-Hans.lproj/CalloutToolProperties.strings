@@ -14,7 +14,10 @@
 "3.ibShadowedToolTip" = "标注边框样式";
 "30.title" = "无线条";
 "319.ibExternalAccessibilityDescription" = "标注文本内边距";
+"319.ibShadowedToolTip" = "调整文本周围的间距";
 "320.ibExternalAccessibilityDescription" = "标注文本内边距";
+"320.ibShadowedToolTip" = "调整文本周围的间距";
+"324.title" = "内边距：";
 "352.title" = "填充";
 "40q-kF-ggH.title" = "行距：";
 "5a1-xb-c2A.title" = "箭头大小：";
@@ -35,6 +38,7 @@
 "EcS-9K-u4g.ibExternalAccessibilityDescription" = "标注字号";
 "EcS-9K-u4g.ibShadowedToolTip" = "字号（点）";
 "EiB-yy-oub.ibExternalAccessibilityDescription" = "标注行距";
+"EiB-yy-oub.ibShadowedToolTip" = "调整文本行距";
 "JIM-j1-jz9.ibShadowedToolTip" = "箭头样式";
 "K3Z-eb-hWQ.ibShadowedToolTip" = "线型";
 "MsT-SP-F8F.ibExternalAccessibilityDescription" = "标注箭头大小";
@@ -52,6 +56,7 @@
 "iwd-Ra-lja.ibShadowedToolTip" = "字号（点）";
 "j58-Ud-6Y4.title" = "箭头颜色：";
 "jgC-cD-VDS.ibExternalAccessibilityDescription" = "标注行距";
+"jgC-cD-VDS.ibShadowedToolTip" = "调整文本行距";
 "mxe-Jq-z1i.ibExternalAccessibilityDescription" = "标注字体样式";
 "mxe-Jq-z1i.ibShadowedToolTip" = "字体样式";
 "oVB-Jg-3t6.ibExternalAccessibilityDescription" = "标注字体颜色";

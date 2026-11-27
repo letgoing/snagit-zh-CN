@@ -45,7 +45,7 @@ fi
 
 if [[ ! -w "$RESOURCES_DIR" || ! -w "$COMMON_RESOURCES_DIR" || ! -w "$HELPER_RESOURCES_DIR" ]]; then
   echo "当前用户没有写入 Snagit 资源目录的权限，正在请求 sudo 权限重新执行。"
-  exec sudo SNAGIT_APP="$APP_PATH" SNAGIT_USER_HOME="$USER_HOME" bash "$0"
+  exec sudo SNAGIT_APP="$APP_PATH" SNAGIT_USER_HOME="$USER_HOME" SNAGIT_SKIP_PRESETS="${SNAGIT_SKIP_PRESETS:-0}" bash "$0"
 fi
 
 restore_backup() {
@@ -108,7 +108,9 @@ plutil -lint "$COMMON_TARGET_DIR"/*.strings >/dev/null
 plutil -lint "$HELPER_TARGET_DIR"/*.strings >/dev/null
 
 echo "7/7 汉化已保存的默认捕获预设名称..."
-if [[ -f "$PRESET_ARCHIVE" ]]; then
+if [[ "${SNAGIT_SKIP_PRESETS:-0}" == 1 ]]; then
+  echo "已跳过个人预设，仅更新应用界面。"
+elif [[ -f "$PRESET_ARCHIVE" ]]; then
   python3 - "$PRESET_ARCHIVE" "$PRESET_BACKUP" <<'PY'
 import os
 import plistlib

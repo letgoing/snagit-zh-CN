@@ -1,7 +1,26 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
+"3b3-Aj-kWm.ibExternalAccessibilityDescription" = "椭圆聚光灯";
+"3b3-Aj-kWm.ibShadowedToolTip" = "椭圆聚光灯";
+"3hf-Ew-sCE.ibExternalAccessibilityDescription" = "矩形聚光灯";
+"3hf-Ew-sCE.ibShadowedToolTip" = "矩形聚光灯";
+"42F-Zy-9wV.ibExternalAccessibilityDescription" = "聚光灯颜色";
 "42F-Zy-9wV.ibShadowedToolTip" = "颜色";
+"6jT-EB-3Za.ibExternalAccessibilityDescription" = "聚光灯模糊强度";
+"6jT-EB-3Za.ibShadowedToolTip" = "背景模糊强度";
+"8eJ-ro-mS8.ibExternalAccessibilityDescription" = "圆角矩形聚光灯";
+"8eJ-ro-mS8.ibShadowedToolTip" = "圆角矩形聚光灯";
 "9jN-tt-iFK.title" = "模糊：";
+"A1J-sP-laI.title" = "背景";
+"DQM-Rw-fuh.ibExternalAccessibilityDescription" = "聚光灯模糊强度";
+"DQM-Rw-fuh.ibShadowedToolTip" = "背景模糊强度";
+"QV6-lr-6yj.ibShadowedToolTip" = "仅突出显示文本";
+"QgV-To-elz.ibExternalAccessibilityDescription" = "聚光灯不透明度";
+"QgV-To-elz.ibShadowedToolTip" = "背景叠加色不透明度";
+"bbD-D0-LxU.ibExternalAccessibilityDescription" = "多边形聚光灯";
+"bbD-D0-LxU.ibShadowedToolTip" = "多边形聚光灯";
 "eUN-5p-VAh.title" = "颜色：";
 "guJ-qh-n1W.title" = "仅应用于文本";
 "qAY-7R-H6h.title" = "不透明度：";
+"u7A-aO-UKX.ibExternalAccessibilityDescription" = "聚光灯不透明度";
+"u7A-aO-UKX.ibShadowedToolTip" = "背景叠加色不透明度";

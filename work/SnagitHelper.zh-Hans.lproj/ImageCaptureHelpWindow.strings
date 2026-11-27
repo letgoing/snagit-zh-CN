@@ -1,3 +1,13 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
 "103.title" = "窗口";
+"14.title" = "按 H 关闭帮助";
+"19.title" = "切换放大镜";
+"20.title" = "取消捕获";
+"23.title" = "点击箭头开始自动滚动捕获";
+"60.title" = "按 H 查看帮助";
+"77S-en-92n.title" = "捕获全屏";
+"78.title" = "自动滚动捕获已停用。按 S 查看解决方法。";
+"98.title" = "选择多个区域";
+"PTO-WL-G3b.title" = "空格";
+"tIx-tG-Dcg.title" = "开始或结束区域选择";

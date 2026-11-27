@@ -1,5 +1,9 @@
 /* Simplified Chinese localization generated for local Snagit use. */
 
+"12.title" = "第 3 项";
+"13.title" = "第 2 项";
 "14.title" = "项目 1";
+"26.title" = "屏幕闪光";
+"5.ibShadowedToolTip" = "使用摄像头拍照";
 "8.title" = "摄像头：";
 "85.title" = "关闭";

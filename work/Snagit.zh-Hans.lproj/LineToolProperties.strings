@@ -2,8 +2,10 @@
 
 "10.ibExternalAccessibilityDescription" = "箭头线条粗细";
 "10.ibShadowedToolTip" = "线条粗细";
+"106.ibShadowedToolTip" = "箭头首端样式";
 "11.ibExternalAccessibilityDescription" = "箭头不透明度";
 "11.ibShadowedToolTip" = "不透明度（百分比）";
+"116.ibShadowedToolTip" = "箭头尾端样式";
 "146.title" = "颜色";
 "29.title" = "宽度：";
 "2ne-XG-oM9.ibExternalAccessibilityDescription" = "箭头头部大小";
@@ -12,6 +14,7 @@
 "68.ibShadowedToolTip" = "线型";
 "78.ibExternalAccessibilityDescription" = "箭头颜色";
 "78.ibShadowedToolTip" = "颜色";
+"82.ibExternalAccessibilityDescription" = "阴影方向";
 "82.ibShadowedToolTip" = "点击以选择或取消选择阴影方向";
 "90.title" = "不透明度：";
 "Cva-IQ-W2z.ibExternalAccessibilityDescription" = "箭头尾部大小";

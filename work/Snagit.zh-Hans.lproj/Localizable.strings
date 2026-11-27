@@ -111,6 +111,7 @@
 "Automatically Create a Step-by-Step Guide" = "自动创建分步指南";
 "Automatically Hide Sensitive Information" = "自动隐藏敏感信息";
 "Automatically blur sensitive information" = "自动模糊敏感信息";
+"Automatically check for updates" = "自动检查更新";
 "Automatically detect and obscure sensitive information." = "自动检测并遮挡敏感信息。";
 "Automatically download and install updates" = "自动下载并安装更新";
 "Automatically redact sensitive information" = "自动遮盖敏感信息";
@@ -119,6 +120,9 @@
 "Autosave directory already exists" = "自动保存目录已存在";
 "Available in Editor or Library" = "可在编辑器或图库中使用";
 "Avatar" = "头像";
+"BEST" = "最佳";
+"BETTER" = "较好";
+"BLUR_SMART_REDACT_OPTION" = "模糊";
 "Back" = "返回";
 "Background Tool" = "背景工具";
 "Background color" = "背景颜色";
@@ -152,6 +156,7 @@
 "Basic Stacked Portrait" = "基本 - 堆叠（纵向）";
 "Basic Timeline Landscape" = "基本 - 时间线（横向）";
 "Basic Timeline Portrait" = "基本 - 时间线（纵向）";
+"Batch export images" = "批量导出图像";
 "Beach Day 2 Steps Portrait" = "海滩日 - 2 步（纵向）";
 "Beach Day 3 Steps Landscape" = "海滩日 - 3 步（横向）";
 "Beach Day 3 Steps Portrait" = "海滩日 - 3 步（纵向）";
@@ -261,6 +266,7 @@
 "Busy..." = "忙碌中...";
 "Buttons" = "按钮";
 "Buy Now" = "立即购买";
+"CUT_OUT_VIDEO_SEGMENT" = "剪除";
 "Call %@" = "呼叫 %@";
 "Call attention to a selected area by dimming the rest of the image." = "通过调暗图像其余部分来突出所选区域。";
 "Callout" = "标注";
@@ -359,7 +365,7 @@
 "Combining Videos..." = "正在合并视频...";
 "Comic Portrait A" = "漫画纵向 A";
 "Comic Portrait B" = "漫画纵向 B";
-"Comments" = "评论";
+"Comments" = "备注";
 "Compare With Selected" = "与所选内容比较";
 "Comparison" = "比较";
 "Complete Registration" = "完成注册";
@@ -395,6 +401,7 @@
 "Create Repeatable Header" = "创建可重复页眉";
 "Create Repeatable Section" = "创建可重复区域";
 "Create Video from Images..." = "从图像创建视频...";
+"Create a Video" = "创建视频";
 "Create a Visual Guide" = "创建视觉指南";
 "Create a copy of the selected capture in the tray." = "在托盘中创建所选捕获的副本。";
 "Create a new image on the canvas." = "在画布上创建新图像。";
@@ -411,6 +418,7 @@
 "Crosshair" = "十字准星";
 "Cursor" = "光标";
 "Cursor Tool" = "光标工具";
+"Cursor scale" = "光标缩放比例";
 "Cursor style" = "光标样式";
 "Cursor:" = "光标：";
 "Cursors" = "光标";
@@ -425,6 +433,7 @@
 "Cut Out Tool" = "剪除工具";
 "Cut Video" = "剪切视频";
 "DON'T" = "不要";
+"Daily" = "每天";
 "Dark Grayscale" = "深色灰阶";
 "Data & Privacy" = "数据与隐私";
 "Date" = "日期";
@@ -523,6 +532,7 @@
 "Dropbox Business" = "Dropbox 商务版";
 "Dropbox Personal" = "Dropbox 个人版";
 "Duplicate" = "复制副本";
+"Duplicate Selected" = "创建所选项的副本";
 "Duplicating..." = "正在复制...";
 "Duration:" = "时长：";
 "Dusk 2 Steps Portrait" = "黄昏 - 2 步（纵向）";
@@ -567,7 +577,6 @@
 "Edit theme or " = "编辑主题或 ";
 "Edit vertical text" = "编辑竖排文本";
 "Edit..." = "编辑...";
-"Edited Video" = "已编辑视频";
 "Editor" = "编辑器";
 "Editor Shortcut" = "编辑器快捷键";
 "Effect Styles" = "效果样式";
@@ -654,6 +663,7 @@
 "Feature Disabled" = "功能已禁用";
 "Feedback" = "反馈";
 "File Complete" = "文件完成";
+"File has unsaved changes" = "文件有未保存的更改";
 "File is Locked" = "文件已锁定";
 "File not saved" = "文件未保存";
 "Fill" = "填充";
@@ -683,6 +693,7 @@
 "Framerate: 5 FPS" = "帧率：5 FPS";
 "Frames" = "边框";
 "Fun" = "趣味";
+"GOOD" = "良好";
 "Gaussian blur" = "高斯模糊";
 "General" = "通用";
 "General Capture" = "通用捕获";
@@ -751,12 +762,15 @@
 "Hide Snagit" = "隐藏 Snagit";
 "Hide Snagit and controls when capturing" = "捕获时隐藏 Snagit 和控件";
 "Hide desktop icons during video capture" = "视频捕获时隐藏桌面图标";
+"Hide image" = "隐藏图像";
 "Hide or mask sensitive information in an image." = "隐藏或遮盖图像中的敏感信息。";
 "Hide the recent captures tray." = "隐藏最近捕获托盘。";
 "High (30 fps)" = "高（30 fps）";
 "Highlight" = "高亮";
+"Highlight Color" = "高亮颜色";
 "Highlight Tool" = "高亮工具";
 "Highlight a rectangular area in an image." = "高亮图像中的矩形区域。";
+"Highlight size" = "高亮大小";
 "Highlight:" = "高亮：";
 "Highlighter" = "荧光笔";
 "Highlights" = "高亮";
@@ -767,6 +781,7 @@
 "Hold ⌥+Scroll" = "按住 ⌥ 并滚动";
 "Holiday" = "节日";
 "Horizontal" = "水平";
+"Hourly" = "每小时";
 "How-to guides in a flash" = "快速制作操作指南";
 "I agree to experimental feature terms" = "我同意实验性功能条款";
 "IP Addresses" = "IP 地址";
@@ -820,6 +835,7 @@
 "Interface" = "界面";
 "Internal" = "内部";
 "Invalid File" = "无效文件";
+"Invalid Filename" = "文件名无效";
 "Invert Selection" = "反选";
 "Justified text block with justified last line" = "末行也两端对齐的文本块";
 "Justified text block with ragged last line" = "末行不两端对齐的文本块";
@@ -939,7 +955,7 @@
 "No effects" = "无效果";
 "No objects found" = "未找到对象";
 "No results available" = "无可用结果";
-"No results returned" = "没有返回结果";
+"No results returned" = "没有找到匹配项";
 "No unread Screencast notifications" = "没有未读 Screencast 通知";
 "No, Thanks" = "不用，谢谢";
 "None" = "无";
@@ -957,7 +973,6 @@
 "OneDrive Personal" = "OneDrive 个人版";
 "OneDrive for Business" = "OneDrive 商务版";
 "Only show help tips" = "仅显示帮助提示";
-"Only videos without changes can be dragged. Please save the video." = "只能拖动没有更改的视频。请先保存视频。";
 "Opacity" = "不透明度";
 "Opacity (percent)" = "不透明度（百分比）";
 "Opacity:" = "不透明度：";
@@ -987,6 +1002,8 @@
 "Oval with tail" = "带尾部的椭圆";
 "Overwrite" = "覆盖";
 "Overwrite Styles" = "覆盖样式";
+"Overwrite canceled" = "已取消覆盖";
+"PREMIUM" = "高级";
 "PROUDLY PRESENTED TO" = "荣誉颁发给";
 "Page Setup" = "页面设置";
 "Password:" = "密码：";
@@ -1182,7 +1199,6 @@
 "Searching for text..." = "正在搜索文本...";
 "Security Type:" = "安全类型：";
 "See All" = "查看全部";
-"See how Snagit’s turbo-charging your videos and documentation…" = "看看 Snagit 如何加速你的视频和文档制作…";
 "Select All (%@)" = "全选（%@）";
 "Select One" = "选择一个";
 "Select a Template" = "选择模板";
@@ -1192,6 +1208,7 @@
 "Select an object, area, or background on the canvas to edit." = "选择画布上的对象、区域或背景进行编辑。";
 "Select and combine videos" = "选择并合并视频";
 "Select multiple captures, then right-click and select Combine in Template." = "选择多个捕获，然后右键点击并选择“在模板中合并”。";
+"Select one or more images to export" = "选择一张或多张要导出的图像";
 "Select only one file to enable Share Link." = "只选择一个文件以启用共享链接。";
 "Select type of blur" = "选择模糊类型";
 "Selected Capture Mode:" = "所选捕获模式：";
@@ -1209,6 +1226,7 @@
 "Set Grouped Object Color" = "设置组合对象颜色";
 "Set Object Priority" = "设置对象优先级";
 "Set the default image scale and author information." = "设置默认图像缩放和作者信息。";
+"Settings" = "设置";
 "Shadow" = "阴影";
 "Shadow angle (degrees)" = "阴影角度（度）";
 "Shadow blur" = "阴影模糊";
@@ -1230,6 +1248,7 @@
 "Share Your Media" = "共享你的媒体";
 "Share a Link and Spark a Conversation" = "共享链接并开启交流";
 "Share the link to this capture to get the converstation started!" = "共享此捕获的链接以开始交流！";
+"Share to Camtasia Online" = "分享到 Camtasia Online";
 "Share your captures to:" = "将捕获共享到：";
 "Shareable Link" = "可共享链接";
 "Shared" = "已共享";
@@ -1248,9 +1267,13 @@
 "Show Recent Captures" = "显示最近捕获";
 "Show Rulers" = "显示标尺";
 "Show alert when microphone is muted" = "麦克风静音时显示提醒";
+"Show cursor" = "显示光标";
+"Show highlight" = "显示高亮";
+"Show image" = "显示图像";
 "Show me all tips and news from TechSmith" = "显示所有来自 TechSmith 的提示和新闻";
 "Show the recent captures tray." = "显示最近捕获托盘。";
 "Show video countdown" = "显示视频倒计时";
+"Show/hide image" = "显示或隐藏图像";
 "Sign In" = "登录";
 "Sign Out" = "退出登录";
 "Sign Out Canceled" = "退出登录已取消";
@@ -1287,6 +1310,7 @@
 "Snagit needs additional permissions" = "Snagit 需要额外权限";
 "Snagit needs your permission to save this file." = "Snagit 需要你的权限来保存此文件。";
 "Snagit obscured the selected items below." = "Snagit 已遮盖下方所选项目。";
+"Snagit updates" = "Snagit 更新";
 "Snagit will remove this tag from all assigned captures which cannot be undone." = "Snagit 会从所有已分配捕获中移除此标签，此操作无法撤销。";
 "Snapping Selection" = "吸附选择";
 "Snapping Selections" = "吸附选择";
@@ -1310,10 +1334,10 @@
 "Start a new capture" = "开始新的捕获";
 "Start a new image capture." = "开始新的图像捕获。";
 "Start a new video capture." = "开始新的视频捕获。";
-"Start your engine!" = "开始吧！";
 "Step" = "步骤";
 "Step Capture" = "步骤捕获";
 "Step Capture Portrait" = "步骤捕获纵向";
+"Step Captures" = "步骤捕获";
 "Step Four" = "步骤四";
 "Step One" = "步骤一";
 "Step Three" = "步骤三";
@@ -1401,6 +1425,7 @@
 "Torn" = "撕裂";
 "Torn Edge" = "撕裂边缘";
 "Transparent" = "透明";
+"Trash" = "废纸篓";
 "Travel and Places" = "旅行和地点";
 "Trial Subscription" = "试用订阅";
 "Trial mode restores access to your Snagit Library for a limited time. [Learn More](%@)" = "试用模式会在有限时间内恢复对 Snagit 图库的访问。[了解更多](%@)";
