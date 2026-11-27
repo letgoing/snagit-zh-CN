@@ -1,0 +1,35 @@
+Snagit 2027.0.1（Mac）简体中文 · 手动安装
+
+本包只有翻译文件，不是 Snagit 软件本体。全程使用访达（Finder），不用打开终端，也不用安装 Python。
+
+一、安装前
+1. 在 Snagit 菜单中打开“About Snagit / 关于 Snagit”。仅在版本为 2027.0.1 时使用此包；版本不符，请找对应版本的汉化包。
+2. 保存正在编辑的文件，结束录屏。先退出 Snagit 编辑器，再从 Mac 菜单栏的 Snagit 图标退出捕获助手。仅关闭窗口不等于退出。
+3. 解压 ZIP。打开两个访达窗口：一个显示解压后的文件，另一个用于打开下面的安装位置。先不要复制文件。
+
+二、用访达依次安装以下三项
+每项都用同一个方法：
+① 在第二个访达窗口选择“前往 > 前往文件夹…”（Shift + Command + G），粘贴该项下面的整行路径，按回车。
+② 如果里面已有 zh-Hans.lproj，先把它改名为 zh-Hans.lproj.before-manual。如果备份名已存在，另起一个新名字，并记下来。没有旧中文目录就跳过此步。
+③ 回到第一个窗口，打开该项对应的编号文件夹，选中里面的整个 zh-Hans.lproj 文件夹，按 Command + C。
+④ 回到第二个窗口，按 Command + V。只复制 zh-Hans.lproj，不要复制编号文件夹，也不要把文件粘进 Base.lproj 或 en.lproj。若提示“合并/替换”，点取消，再检查第②步。
+
+01-主程序（编辑器、工具栏、菜单）
+/Applications/Snagit.app/Contents/Resources
+
+02-效果组件（主题、阴影、边缘等样式）
+/Applications/Snagit.app/Contents/Frameworks/SnagitCommon.framework/Versions/A/Resources
+
+03-捕获助手（点击“捕获”时出现的小窗）
+/Applications/Snagit.app/Contents/Library/LoginItems/SnagitHelper.app/Contents/Resources
+
+以上路径假设 Snagit 安装在“应用程序”中，名称为 Snagit.app。若安装在别处，可在访达中找到 Snagit，右键点“显示包内容”，再按相应路径从 Contents 起逐层打开。无法找到对应目录时请停止，不要新建目录或改其他应用。访达可能要求用管理员账户确认复制；若无权限，请联系管理员，不要修改系统安全设置。
+
+三、打开并检查
+重新打开 Snagit。在编辑器里查看“文件”和“效果”，再点“捕获”检查小窗。之前创建的个人预设和标签不会被改名。产品名和少数未翻译的文案仍可能显示英文。
+若整个编辑器仍是英文，在“系统设置 > 通用 > 语言与地区 > 应用程序”中为 Snagit 选择“简体中文”（如可选），再退出并重开。无需更改整台 Mac 的语言。仅小窗仍是英文时，先确认第 03 项已复制，并完全退出捕获助手后再试。
+苹果官方说明：https://support.apple.com/zh-cn/guide/mac-help/mh26684/mac
+
+四、如何恢复
+退出编辑器和捕获助手。按上面的三个路径逐项检查：将本次新增的 zh-Hans.lproj 移出应用包；如果第②步留了备份，再把对应备份改回 zh-Hans.lproj。然后重新打开 Snagit。
+修改第三方应用包可能影响签名检查或更新。若 macOS 拒绝打开应用，请恢复备份，必要时从 TechSmith 官方渠道重新安装 Snagit，不要关闭系统安全保护。软件升级可能覆盖汉化，升级后请使用与新版本匹配的汉化包。
