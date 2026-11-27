@@ -6,13 +6,17 @@
 
 ## 直接下载（不用命令行）
 
-**[下载 Snagit 2027.0.1 macOS 简体中文手动汉化包（ZIP）](https://github.com/letgoing/snagit-zh-CN/raw/refs/heads/main/downloads/Snagit-2027.0.1-macOS-zh-Hans.zip)** · [查看访达安装与恢复步骤](docs/手动汉化说明.txt)
+**[下载 Snagit 2027.0.1 macOS 简体中文手动汉化包（ZIP）](https://github.com/letgoing/snagit-zh-CN/releases/download/v2027.0.1/Snagit-2027.0.1-macOS-zh-Hans.zip)** · [版本发布页](https://github.com/letgoing/snagit-zh-CN/releases/tag/v2027.0.1) · [查看访达安装与恢复步骤](docs/手动汉化说明.txt)
 
 1. 在 Snagit 的“关于”窗口确认版本是 **2027.0.1**。保存文件、结束录屏，退出编辑器和菜单栏里的捕获助手。
 2. 点击上面的下载链接并解压，打开 **00-先读我.txt**。不用下载仓库源码，也不用安装 Git 或 Python。
 3. 按说明在访达里打开三个目标位置，先备份原有的中文文件夹，再分别复制 **01-主程序、02-效果组件、03-捕获助手** 里面的 `zh-Hans.lproj`。重新打开 Snagit 即可检查。
 
 这是**中文翻译包，不含 Snagit 本体**。想撤销时按包内说明还原备份。若 Snagit 拒绝启动，请恢复备份或重新安装官方原版，不要关闭系统安全保护。版本不同请勿套用此包。
+
+## 汉化预览
+
+![Snagit 中文编辑器：顶部为标注工具栏，右侧为快速样式、阴影和其他工具属性](docs/images/snagit-zh-hans-preview.jpg)
 
 ## 其他版本或升级后：一键脚本
 
@@ -69,4 +73,10 @@ python3 outputs/build_snagit_zh_hans.py
 
 已保存的默认预设名称存放在用户配置中，不会随语言包自动改变。安装器会尝试备份该配置并翻译四个默认名称；若 macOS 隐私权限阻止读取，会提示跳过，不影响应用中文资源的安装。个人预设归档不包含在本仓库中。
 
-本仓库只提供汉化资源与辅助脚本，不包含 Snagit 应用程序、许可证或用户截图。请自行安装并按其许可使用 Snagit；本项目与 TechSmith 无隶属关系。
+本仓库不包含 Snagit 应用程序、许可证或个人捕获图库。请自行安装并按其许可使用 Snagit；本项目与 TechSmith 无隶属关系。
+
+## 自愿打赏
+
+汉化包免费下载使用。如果这个项目帮到了你，欢迎扫码支持后续维护。
+
+<img src="docs/images/support-code.png" alt="作者的打赏码" width="260">
