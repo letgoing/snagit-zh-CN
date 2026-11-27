@@ -11,8 +11,8 @@
 3. 双击根目录的 **一键重新汉化.command**。脚本会读取本机 Snagit 的版本，生成并安装中文资源，然后尝试正常退出编辑器和捕获助手，并用简体中文重新打开 Snagit。后续升级 Snagit 后，再双击同一脚本即可。可以在访达中为脚本创建替身放到桌面。
 
 ```bash
-git clone https://github.com/letgoing/snagit-.git
-cd snagit-
+git clone https://github.com/letgoing/snagit-zh-CN.git
+cd snagit-zh-CN
 ./一键重新汉化.command
 ```
 
